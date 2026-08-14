@@ -1,0 +1,6 @@
+# The container is built on Linux; a CRLF shebang breaks do_build.sh there.
+* text=auto eol=lf
+*.sh text eol=lf
+Dockerfile text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
