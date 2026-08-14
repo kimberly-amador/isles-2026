@@ -1,0 +1,14 @@
+# No imaging data, predictions, or model weights in this repository.
+dataset/
+nnUNet_raw/
+nnUNet_preprocessed/
+nnUNet_results/
+*.nii
+*.nii.gz
+*.npz
+*.pth
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/

@@ -1,0 +1,8 @@
+# do_test_run.sh keeps the extracted weights and the interface fixtures inside
+# docker/, which is also the build context. Neither belongs in the image: Grand
+# Challenge mounts the model at /opt/ml/model separately, and shipping ~800 MB to
+# the daemon slows every rebuild.
+model/
+test/
+*.tar
+*.tar.gz

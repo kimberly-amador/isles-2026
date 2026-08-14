@@ -1,0 +1,24 @@
+# Eval-only env for the metrics harness (scripts/pipeline/evaluate.py + tests).
+# Kept SEPARATE from isles26 because it is CPU-only -- no torch, no nnU-Net -- so
+# the eval job runs on a cpu partition without dragging in the training stack.
+#
+#   conda env create -f environment-eval.yml
+#
+# Run the harness with `conda activate isles26-eval`.
+name: isles26-eval
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      # Official ISLES'26 metrics (src/isles26/eval/_official.py). Upstream
+      # unpinned panoptica on 2026-07-28; we pin so our scores stay reproducible.
+      # Re-check the upstream pin before submission -- a floating dependency means
+      # the leaderboard scores with whatever is current on their eval day.
+      - panoptica==2.1.4
+      # panoptica 2.1.4 imports nibabel at module load but does not declare it.
+      # Ours stays SimpleITK-only; this is panoptica's dependency, not a pipeline one.
+      - nibabel
+      - SimpleITK>=2.3
+      - scikit-learn>=1.3

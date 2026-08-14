@@ -1,0 +1,17 @@
+# torch comes from the base image (2.13.0+cu126) via --system-site-packages;
+# do NOT list it here or pip will resolve a second copy over it.
+#
+# Pinned to the version that trained the checkpoints (ARC `isles26`, Python 3.11).
+# Plans and checkpoint formats are not guaranteed across nnU-Net releases and the
+# container has no internet at runtime, so a mismatch is unrecoverable.
+# It pulls matplotlib/pandas/seaborn/sklearn as transitive deps -- unused at
+# inference, but not worth vendoring around.
+nnunetv2==2.8.1
+
+# Direct imports of inference.py, kept explicit even though nnunetv2 pulls both.
+SimpleITK
+numpy
+
+# The template's server. app.py is vendored unmodified.
+fastapi
+uvicorn

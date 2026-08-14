@@ -1,0 +1,30 @@
+# Training environment (nnU-Net + PyTorch).
+#
+#   conda env create -f environment.yml
+#
+# torch: we trained with 2.13.0+cu126, installed from PyTorch's cu126 wheel index
+# because our cluster's driver is CUDA 12.6. That pin is hardware-specific --
+# install the torch build matching your own CUDA version instead, and note that
+# nnU-Net is a pip package that will pull its own torch if none is present, so
+# install torch first if you need a particular build.
+#
+# nnunetv2 is pinned: nnU-Net's defaults change between minor versions, and 2.8.1
+# is the version verified to reproduce the reported results.
+#
+# Scoring does not need this environment -- see environment-eval.yml, which is
+# CPU-only and carries the pinned metrics stack.
+name: isles26
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.24
+  - simpleitk>=2.3
+  - scikit-learn>=1.3
+  - tqdm
+  - pip
+  - pip:
+      # Replace with the wheel index matching your CUDA; this is what we used.
+      - --extra-index-url https://download.pytorch.org/whl/cu126
+      - torch==2.13.0+cu126
+      - nnunetv2==2.8.1

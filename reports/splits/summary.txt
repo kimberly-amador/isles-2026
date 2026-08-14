@@ -1,0 +1,173 @@
+Total cases: 1450
+Folds: 5, seed: 0
+Volume-quartile edges (mL): q1<1.122  q2<5.239  q3<34.513  q4>=34.513
+
+Fold sizes:
+  fold 0: 290
+  fold 1: 290
+  fold 2: 290
+  fold 3: 290
+  fold 4: 290
+
+Rare strata lumped into '_rare_': 235 cases across 114 keys
+  R002__q2__late  (n=3)
+  R002__q4__late  (n=3)
+  R003__q1__late  (n=2)
+  R003__q2__late  (n=2)
+  R003__q4__late  (n=4)
+  R004__q2__late  (n=3)
+  R005__q2__early  (n=1)
+  R008__q1__early  (n=3)
+  R008__q1__unk  (n=1)
+  R008__q2__early  (n=3)
+  R009__q4__early  (n=3)
+  R009__q4__late  (n=4)
+  R010__q3__late  (n=3)
+  R015__q1__late  (n=2)
+  R015__q1__unk  (n=2)
+  R015__q2__late  (n=3)
+  R015__q2__unk  (n=2)
+  R015__q3__unk  (n=1)
+  R015__q4__unk  (n=1)
+  R016__q1__unk  (n=1)
+  R017__q1__late  (n=3)
+  R017__q1__unk  (n=1)
+  R017__q2__late  (n=3)
+  R017__q3__late  (n=3)
+  R018__q1__late  (n=1)
+  R018__q2__late  (n=2)
+  R018__q3__late  (n=1)
+  R019__q2__early  (n=4)
+  R019__q3__early  (n=3)
+  R019__q3__unk  (n=1)
+  R019__q4__early  (n=1)
+  R020__q2__early  (n=1)
+  R023__q3__late  (n=1)
+  R024__q3__late  (n=4)
+  R027__q2__unk  (n=1)
+  R027__q4__unk  (n=2)
+  R028__q1__late  (n=3)
+  R028__q3__early  (n=1)
+  R028__q3__late  (n=3)
+  R029__q1__late  (n=1)
+  R029__q3__early  (n=1)
+  R029__q4__late  (n=3)
+  R030__q1__early  (n=1)
+  R030__q1__late  (n=2)
+  R030__q2__late  (n=2)
+  R030__q3__late  (n=3)
+  R031__q1__early  (n=3)
+  R031__q1__late  (n=1)
+  R032__q1__late  (n=1)
+  R032__q3__late  (n=2)
+  R033__q3__early  (n=2)
+  R034__q4__late  (n=4)
+  R035__q1__late  (n=4)
+  R035__q3__late  (n=3)
+  R035__q4__late  (n=3)
+  R038__q3__late  (n=3)
+  R039__q1__early  (n=2)
+  R039__q2__early  (n=1)
+  R039__q4__early  (n=1)
+  R040__q1__unk  (n=1)
+  R040__q2__late  (n=3)
+  R040__q3__late  (n=3)
+  R041__q1__early  (n=3)
+  R042__q2__early  (n=1)
+  R044__q2__late  (n=2)
+  R044__q4__late  (n=2)
+  R045__q1__late  (n=1)
+  R045__q2__late  (n=1)
+  R045__q3__late  (n=2)
+  R046__q1__late  (n=2)
+  R046__q3__late  (n=2)
+  R046__q4__late  (n=2)
+  R047__q2__early  (n=1)
+  R047__q3__early  (n=1)
+  R049__q1__unk  (n=1)
+  R049__q2__unk  (n=1)
+  R049__q3__early  (n=3)
+  R049__q4__early  (n=1)
+  R050__q2__early  (n=1)
+  R050__q3__early  (n=1)
+  R053__q1__early  (n=3)
+  R053__q2__early  (n=2)
+  R056__q1__late  (n=3)
+  R056__q2__unk  (n=1)
+  R056__q3__late  (n=1)
+  R057__q1__late  (n=2)
+  R057__q2__late  (n=3)
+  R057__q3__late  (n=4)
+  R058__q4__early  (n=4)
+  R061__q1__late  (n=3)
+  R061__q2__late  (n=3)
+  R061__q4__late  (n=3)
+  R062__q1__late  (n=3)
+  R062__q2__late  (n=1)
+  R062__q3__late  (n=2)
+  R062__q4__late  (n=2)
+  R063__q2__late  (n=1)
+  R064__q2__late  (n=3)
+  R064__q3__late  (n=1)
+  R064__q4__late  (n=2)
+  R065__q2__unk  (n=1)
+  R065__q3__early  (n=1)
+  R065__q3__unk  (n=1)
+  R065__q4__early  (n=1)
+  R067__q1__late  (n=1)
+  R067__q3__early  (n=4)
+  R069__q1__early  (n=3)
+  R070__q1__early  (n=1)
+  R070__q2__early  (n=4)
+  R070__q3__early  (n=1)
+  R070__q3__unk  (n=1)
+  R070__q4__unk  (n=1)
+  SOOP__q1__unk  (n=3)
+  SOOP__q4__unk  (n=1)
+
+Sites represented in all 5 folds: 43 / 55
+  Sites missing from at least one fold:
+    R016 (n=1): present in folds [4]
+    R020 (n=1): present in folds [3]
+    R033 (n=2): present in folds [1, 2]
+    R039 (n=4): present in folds [1, 3, 4]
+    R041 (n=3): present in folds [0, 1, 3]
+    R044 (n=4): present in folds [0, 1, 2, 4]
+    R045 (n=4): present in folds [1, 2, 3, 4]
+    R053 (n=5): present in folds [0, 2, 4]
+    R062 (n=8): present in folds [0, 1, 2, 3]
+    R063 (n=1): present in folds [1]
+    R064 (n=6): present in folds [0, 2, 3, 4]
+    R070 (n=8): present in folds [0, 2, 3, 4]
+
+Volume-quartile counts per fold:
+  fold          q1       q2       q3       q4
+  0            68       75       76       71
+  1            77       68       73       72
+  2            68       76       75       71
+  3            70       72       70       78
+  4            71       73       70       76
+
+z-bin counts per fold:
+  fold       z_fine   z_coarse
+  0             278         12
+  1             279         11
+  2             281          9
+  3             281          9
+  4             282          8
+
+maturity counts per fold:
+  fold          early     late      unk
+  0               93      183       14
+  1               94      181       15
+  2               92      184       14
+  3               92      186       12
+  4               91      182       17
+
+multifocal counts per fold (real lesions = components >=10 vox):
+  fold       unifocal   multifocal
+  0             117          173
+  1             116          174
+  2             116          174
+  3             111          179
+  4             123          167
